@@ -1,5 +1,5 @@
 # GeekShopping
-Este projeto foi construído durante o curso "Arquitetura de Microsserviços do 0 com ASP.NET, .NET 6 e C#" na Udemy.
+Este projeto foi construído durante o curso "Arquitetura de Microsserviços do 0 com ASP.NET, .NET 6 e C#" na Udemy. <br/>
 Link do curso: https://www.udemy.com/course/microservices-do-0-a-gcp-com-dot-net-6-kubernetes-e-docker/
 Nese curso não só aprendi coisas novas como tambem consolidei alguns conhecimento ja que tinha.
 O que eu aprendir nesse curso ?
