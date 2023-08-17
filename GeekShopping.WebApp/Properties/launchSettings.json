@@ -4,7 +4,7 @@
     "anonymousAuthentication": true,
     "iisExpress": {
       "applicationUrl": "http://localhost:14233",
-      "sslPort": 0
+      "sslPort": 4440
     }
   },
   "profiles": {
@@ -12,7 +12,7 @@
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
-      "applicationUrl": "http://localhost:5069",
+      "applicationUrl": "https://localhost:4440;http://localhost:4411",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
