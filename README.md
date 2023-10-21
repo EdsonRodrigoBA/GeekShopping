@@ -27,4 +27,16 @@ Configurar uma stack de microsserviços do 0 absoluto;<br/>
 As boas práticas a se adotar ao desenvolver microsserviços;<br/>
 Como expor e consumir microsserviços através de API's RESTFul;<br/>
 Gere documentação de API com Swashbuckle (Swagger).<br/>
+EntytFramework Core <br/>
+Banco de Dados MySql <br/>
+<h5>Execução do Projeto:</h5>
+<p>1° Altere a Conection String do Mysql com base na sua instancia do Mysql, no arquivo appseting.json, o nome da ConncetionString deve ser igual ao que ta na classe Startup.cs </p>
+<p>1° Cada Microserviço tem o seu próprio Banco de Dados, no appseting.json do projeto aqui, nao tem a connectionString pois usei via UserSrecrets. </p>
+<p>Exemplo de ConnectionString pra o Mysql: </p>
+<p> 
+  "ConnectionStrings": {
+    "mysqlConnectionString": "Server=localhost; DataBase=GeekShopping_CartApi; Uid=root; Pwd=suaSenha;"
+  }
+</p>
+
 
