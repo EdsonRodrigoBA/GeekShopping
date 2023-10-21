@@ -15,13 +15,13 @@ namespace GeekShopping.WebApp.Models.Services
             _client = client;
         }
 
-        public async Task<ProductModel> Create(ProductModel vo, string token)
+        public async Task<ProductViewModel> Create(ProductViewModel vo, string token)
         {
             _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             var response = await _client.PostAsJson(basePath, vo);
             if (response.IsSuccessStatusCode)
             {
-                return await response.ReadContentAsync<ProductModel>();
+                return await response.ReadContentAsync<ProductViewModel>();
 
             }
             else
@@ -46,30 +46,30 @@ namespace GeekShopping.WebApp.Models.Services
             }
         }
 
-        public async Task<IEnumerable<ProductModel>> FindAll(string token)
+        public async Task<IEnumerable<ProductViewModel>> FindAll(string token)
         {
             _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
             var response = await _client.GetAsync(basePath);
-            return await response.ReadContentAsync<List<ProductModel>>();
+            return await response.ReadContentAsync<List<ProductViewModel>>();
         }
 
-        public async Task<ProductModel> FindById(long Id, string token)
+        public async Task<ProductViewModel> FindById(long Id, string token)
         {
             _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
             var response = await _client.GetAsync($"{basePath}/{Id}");
-            return await response.ReadContentAsync<ProductModel>();
+            return await response.ReadContentAsync<ProductViewModel>();
         }
 
-        public async Task<ProductModel> Update(ProductModel vo, string token)
+        public async Task<ProductViewModel> Update(ProductViewModel vo, string token)
         {
             _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
             var response = await _client.PutAsJson(basePath, vo);
             if (response.IsSuccessStatusCode)
             {
-                return await response.ReadContentAsync<ProductModel>();
+                return await response.ReadContentAsync<ProductViewModel>();
 
             }
             else

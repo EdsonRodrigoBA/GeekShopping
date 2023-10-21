@@ -6,6 +6,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddHttpClient<IProductService, ProductService>(c =>
     c.BaseAddress = new Uri($"{builder.Configuration["ServicesUrls:ProducAPI"]}")
 );
+builder.Services.AddHttpClient<IcartService, CartService>(c =>
+    c.BaseAddress = new Uri($"{builder.Configuration["ServicesUrls:CartApi"]}")
+);
 // Add services to the container.
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 builder.Services.AddAuthentication(options => {

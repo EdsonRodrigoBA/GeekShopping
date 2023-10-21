@@ -8,10 +8,10 @@ namespace GeekShopping.WebApp.Utils
         private static MediaTypeHeaderValue contentType = new MediaTypeHeaderValue("application/json");
         public static async Task<T> ReadContentAsync<T>(this HttpResponseMessage response)
         {
-            if (!response.IsSuccessStatusCode)
-            {
-                throw new ApplicationException($"Desculpe algo deu errado : {response.ReasonPhrase}");
-            }
+            //if (!response.IsSuccessStatusCode)
+            //{
+            //    throw new ApplicationException($"Desculpe algo deu errado : {response.ReasonPhrase}");
+            //}
             var data = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
             return JsonSerializer.Deserialize<T>(data, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
 

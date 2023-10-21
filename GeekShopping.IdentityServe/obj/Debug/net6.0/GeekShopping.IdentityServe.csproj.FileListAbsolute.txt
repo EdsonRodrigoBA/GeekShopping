@@ -63,5 +63,9 @@ C:\Users\edson\source\repos\GeekShopping\GeekShopping.IdentityServe\obj\Debug\ne
 C:\Users\edson\source\repos\GeekShopping\GeekShopping.IdentityServe\obj\Debug\net6.0\ref\GeekShopping.IdentityServe.dll
 C:\Users\edson\source\repos\GeekShopping\GeekShopping.IdentityServe\bin\Debug\net6.0\Humanizer.dll
 C:\Users\edson\source\repos\GeekShopping\GeekShopping.IdentityServe\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\edson\source\repos\GeekShopping\GeekShopping.IdentityServe\bin\Debug\net6.0\keys\is-signing-key-004A770D35F3684733BA4C8E4BBF187C.json
-C:\Users\edson\source\repos\GeekShopping\GeekShopping.IdentityServe\bin\Debug\net6.0\keys\is-signing-key-B4D50FB116BE05C5CF586CDD7E1815CE.json
+C:\Users\edson\source\repos\GeekShopping\GeekShopping.IdentityServe\obj\Debug\net6.0\staticwebassets\msbuild.GeekShopping.IdentityServe.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\edson\source\repos\GeekShopping\GeekShopping.IdentityServe\obj\Debug\net6.0\staticwebassets\msbuild.build.GeekShopping.IdentityServe.props
+C:\Users\edson\source\repos\GeekShopping\GeekShopping.IdentityServe\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.GeekShopping.IdentityServe.props
+C:\Users\edson\source\repos\GeekShopping\GeekShopping.IdentityServe\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.GeekShopping.IdentityServe.props
+C:\Users\edson\source\repos\GeekShopping\GeekShopping.IdentityServe\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\edson\source\repos\GeekShopping\GeekShopping.IdentityServe\bin\Debug\net6.0\keys\is-signing-key-2CA71D5127DFF7C712995ADD53301C57.json

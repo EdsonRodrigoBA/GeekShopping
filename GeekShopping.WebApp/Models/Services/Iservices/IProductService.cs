@@ -2,10 +2,10 @@
 {
     public interface IProductService
     {
-        Task<IEnumerable<ProductModel>> FindAll(string token);
-        Task<ProductModel> FindById(long Id, string token);
-        Task<ProductModel> Create(ProductModel vo, string token);
-        Task<ProductModel> Update(ProductModel vo, string token);
+        Task<IEnumerable<ProductViewModel>> FindAll(string token);
+        Task<ProductViewModel> FindById(long Id, string token);
+        Task<ProductViewModel> Create(ProductViewModel vo, string token);
+        Task<ProductViewModel> Update(ProductViewModel vo, string token);
         Task<bool> Delete(long id, string token);
     }
 }

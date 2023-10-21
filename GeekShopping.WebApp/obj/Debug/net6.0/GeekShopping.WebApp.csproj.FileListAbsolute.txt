@@ -356,3 +356,8 @@ C:\Users\edson\source\repos\GeekShopping\GeekShopping.WebApp\bin\Debug\net6.0\zh
 C:\Users\edson\source\repos\GeekShopping\GeekShopping.WebApp\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\edson\source\repos\GeekShopping\GeekShopping.WebApp\obj\Debug\net6.0\GeekShopping.WebApp.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\edson\source\repos\GeekShopping\GeekShopping.WebApp\obj\Debug\net6.0\GeekShopping.WebApp.csproj.CopyComplete
+C:\Users\edson\source\repos\GeekShopping\GeekShopping.WebApp\obj\Debug\net6.0\staticwebassets\msbuild.GeekShopping.WebApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\edson\source\repos\GeekShopping\GeekShopping.WebApp\obj\Debug\net6.0\staticwebassets\msbuild.build.GeekShopping.WebApp.props
+C:\Users\edson\source\repos\GeekShopping\GeekShopping.WebApp\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.GeekShopping.WebApp.props
+C:\Users\edson\source\repos\GeekShopping\GeekShopping.WebApp\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.GeekShopping.WebApp.props
+C:\Users\edson\source\repos\GeekShopping\GeekShopping.WebApp\obj\Debug\net6.0\staticwebassets.pack.json
