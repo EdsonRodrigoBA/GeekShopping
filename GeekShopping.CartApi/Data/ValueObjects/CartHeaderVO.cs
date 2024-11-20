@@ -1,4 +1,4 @@
-﻿namespace GeekShopping.CartApi.Data.ValueObjects
+namespace GeekShopping.CartApi.Data.ValueObjects
 {
 
 

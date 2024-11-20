@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "C:\\Users\\edson\\source\\repos\\GeekShopping\\GeekShopping.IdentityServe\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\GeekShopping.IdentityServe.bundle.scp.css",
-      "PackagePath": "staticwebassets\\GeekShopping.IdentityServe.bundle.scp.css"
+      "PackagePath": "staticwebassets\\GeekShopping.IdentityServe.xhlcapskx1.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\edson\\source\\repos\\GeekShopping\\GeekShopping.IdentityServe\\wwwroot\\css\\site.css",
@@ -243,6 +243,10 @@
     {
       "Id": "C:\\Users\\edson\\source\\repos\\GeekShopping\\GeekShopping.IdentityServe\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.GeekShopping.IdentityServe.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.GeekShopping.IdentityServe.Microsoft.AspNetCore.StaticWebAssets.props",

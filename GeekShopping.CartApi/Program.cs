@@ -1,6 +1,7 @@
 using AutoMapper;
 using GeekShopping.CartApi.Config;
 using GeekShopping.CartApi.Models.Context;
+using GeekShopping.CartApi.RabbitMQMessageSender;
 using GeekShopping.CartApi.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -73,6 +74,11 @@ IMapper mapper = MappingConfig.RegisteMappers().CreateMapper();
 builder.Services.AddSingleton(mapper);
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddScoped<ICartRepository, CartRepository>();
+builder.Services.AddSingleton<IRabbitMQMessageSender, RabbitMQMessageSender>();
+builder.Services.AddScoped<ICouponRepository, CouponRepository>();
+builder.Services.AddHttpClient<ICouponRepository, CouponRepository>(c =>
+    c.BaseAddress = new Uri($"{builder.Configuration["ServicesUrls:CouponApi"]}")
+);
 
 var app = builder.Build();
 

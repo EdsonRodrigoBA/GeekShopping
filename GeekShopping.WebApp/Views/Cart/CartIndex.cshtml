@@ -1,4 +1,4 @@
-﻿@model GeekShopping.WebApp.Models.CartViewModel
+@model GeekShopping.WebApp.Models.CartViewModel
 
 @if (Model.cartHeader != null && Model.cartDetails.Count() > 0)
 {
@@ -72,17 +72,36 @@
                     }                   
                     <div class="row">
                         <div class="col-6">
-                            <span>Coupon:</span>
-                            <input asp-for="cartHeader.cuponCode"/>
-                            <button type="submit" asp-action="ApplyCoupon" class="btn-success">
-                                Apply
-                            </button>
+                            @if (string.IsNullOrEmpty(Model.cartHeader.cuponCode))
+                            {
+                                <span>Coupon:</span>
+                                <input asp-for="cartHeader.cuponCode" />
+                                <button type="submit" asp-action="ApplyCoupon" class="btn-success">
+                                    Apply
+                                </button>
+                            }
+                            else
+                            {
+                                <span>Coupon:</span>
+                                <input asp-for="cartHeader.cuponCode" disabled />
+                                <button type="submit" asp-action="RemoveCoupon" class="btn-danger">
+                                    Remove
+                                </button>
+                            }
                         </div>
                         <div class="col-6 text-end">
                             <span class="text-danger" style="font-size:21px;">
                                 Purchase Amount: @string.Format("{0:c}", Model.cartHeader.purchaseAmount)
                                 <br/>
                             </span>
+
+                            @if (Model.cartHeader.dicountTotal > 0)
+                            {
+                                <span class="text-success" style="font-size:21px;">
+                                    Purchase Amount: @string.Format("{0:c}", Model.cartHeader.dicountTotal)
+                                    <br />
+                                </span>
+                            }
                         </div>
                     </div>
                 </div>

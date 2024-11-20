@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "F978R0Sst458yyY1m/ZGDBcQfgOV1/ttEQK7oW/hg44=",
+  "Hash": "V1cVFvXksP2H2WOgGrzWcn87ehwltHj7dHh1/I1uHxE=",
   "Source": "GeekShopping.CartApi",
   "BasePath": "_content/GeekShopping.CartApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

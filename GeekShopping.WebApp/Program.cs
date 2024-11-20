@@ -9,6 +9,10 @@ builder.Services.AddHttpClient<IProductService, ProductService>(c =>
 builder.Services.AddHttpClient<IcartService, CartService>(c =>
     c.BaseAddress = new Uri($"{builder.Configuration["ServicesUrls:CartApi"]}")
 );
+
+builder.Services.AddHttpClient<ICouponService, CouponService>(c =>
+    c.BaseAddress = new Uri($"{builder.Configuration["ServicesUrls:CouponApi"]}")
+);
 // Add services to the container.
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 builder.Services.AddAuthentication(options => {
@@ -44,6 +48,7 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseStaticFiles();
+app.UseRequestLocalization("pt-BR");
 
 app.UseRouting();
 app.UseAuthentication();

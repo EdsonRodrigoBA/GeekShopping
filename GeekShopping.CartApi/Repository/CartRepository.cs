@@ -1,4 +1,4 @@
-﻿using AutoMapper;
+using AutoMapper;
 using GeekShopping.CartApi.Data.ValueObjects;
 using GeekShopping.CartApi.Model;
 using GeekShopping.CartApi.Models.Context;
@@ -19,7 +19,17 @@ namespace GeekShopping.CartApi.Repository
         }
         public async Task<bool> ApplyCoupon(string userId, string codeCoupon)
         {
-            throw new NotImplementedException();
+            var cartHeader = await _context.cartHeaders.FirstOrDefaultAsync(x => x.userId == userId);
+            if (cartHeader != null)
+            {
+
+                cartHeader.cuponCode = codeCoupon;
+                _context.cartHeaders.Update(cartHeader);
+                await _context.SaveChangesAsync();
+                return true;
+            }
+
+            return false;
         }
 
         public async Task<bool> ClearCart(string userId)
@@ -58,7 +68,17 @@ namespace GeekShopping.CartApi.Repository
 
         public async Task<bool> RemoveCoupon(string userId)
         {
-            throw new NotImplementedException();
+            var cartHeader = await _context.cartHeaders.FirstOrDefaultAsync(x => x.userId == userId);
+            if (cartHeader != null)
+            {
+
+                cartHeader.cuponCode = "";
+                _context.cartHeaders.Update(cartHeader);
+                await _context.SaveChangesAsync();
+                return true;
+            }
+
+            return false;
         }
 
         public async Task<bool> RemoveFromCart(long cartDetailsId)

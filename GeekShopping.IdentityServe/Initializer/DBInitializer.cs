@@ -1,4 +1,4 @@
-﻿using GeekShopping.IdentityServe.Configuration;
+using GeekShopping.IdentityServe.Configuration;
 using GeekShopping.IdentityServe.Domain;
 using GeekShopping.IdentityServe.Domain.Context;
 using IdentityModel;
@@ -42,7 +42,7 @@ namespace GeekShopping.IdentityServe.Initializer
                 PhoneNumber = "+55 (73) 99998-4545"
             };
 
-            _user.CreateAsync(adminUser, "tel24M20*").GetAwaiter().GetResult();
+            _user.CreateAsync(adminUser, "").GetAwaiter().GetResult();
             _user.AddToRoleAsync(adminUser, IdentityConfiguration.Admin).GetAwaiter().GetResult();
             var adminClaim = _user.AddClaimsAsync(adminUser, new Claim[]
             {
@@ -67,7 +67,7 @@ namespace GeekShopping.IdentityServe.Initializer
                 PhoneNumber = "+55 (73) 89998-2545"
             };
 
-            _user.CreateAsync(clienteUser, "tel24M20*").GetAwaiter().GetResult();
+            _user.CreateAsync(clienteUser, "...").GetAwaiter().GetResult();
             _user.AddToRoleAsync(clienteUser, IdentityConfiguration.Client).GetAwaiter().GetResult();
             var clienteClaim = _user.AddClaimsAsync(clienteUser, new Claim[]
             {

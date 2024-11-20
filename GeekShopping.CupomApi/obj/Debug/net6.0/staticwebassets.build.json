@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "OWGk/Z3IWGWTPStddzvwyOgvdPh+eCOj8tyO9JO/Vgs=",
+  "Hash": "0Law7EDvOfjfKEnb/liDIBIfN5Hl2LGYs8GeBcC/qwM=",
   "Source": "GeekShopping.CupomApi",
   "BasePath": "_content/GeekShopping.CupomApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

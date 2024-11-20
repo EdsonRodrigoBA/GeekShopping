@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "C:\\Users\\edson\\source\\repos\\GeekShopping\\GeekShopping.WebApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\GeekShopping.WebApp.bundle.scp.css",
-      "PackagePath": "staticwebassets\\GeekShopping.WebApp.bundle.scp.css"
+      "PackagePath": "staticwebassets\\GeekShopping.WebApp.r9bhgkt1d6.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\edson\\source\\repos\\GeekShopping\\GeekShopping.WebApp\\wwwroot\\css\\site.css",
@@ -19,6 +19,10 @@
     {
       "Id": "C:\\Users\\edson\\source\\repos\\GeekShopping\\GeekShopping.WebApp\\wwwroot\\img\\geek_shopping.png",
       "PackagePath": "staticwebassets\\img\\geek_shopping.png"
+    },
+    {
+      "Id": "C:\\Users\\edson\\source\\repos\\GeekShopping\\GeekShopping.WebApp\\wwwroot\\img\\order.png",
+      "PackagePath": "staticwebassets\\img\\order.png"
     },
     {
       "Id": "C:\\Users\\edson\\source\\repos\\GeekShopping\\GeekShopping.WebApp\\wwwroot\\js\\site.js",
@@ -251,6 +255,10 @@
     {
       "Id": "C:\\Users\\edson\\source\\repos\\GeekShopping\\GeekShopping.WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.GeekShopping.WebApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.GeekShopping.WebApp.Microsoft.AspNetCore.StaticWebAssets.props",
